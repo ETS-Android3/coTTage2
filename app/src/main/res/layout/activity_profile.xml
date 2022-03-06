@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/colo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilewallaper"
+    tools:context=".profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@drawable/profilewallaper"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/personwithhat" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profilepic"
+                android:fontFamily="monospace"
+                android:includeFontPadding="false"
+                android:text="Bethlydia Neema"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="80dp"
+                android:layout_height="17dp"
+                android:layout_below="@+id/fullname"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/profilepic"
+                android:fontFamily="monospace"
+                android:includeFontPadding="false"
+                android:text="NeemaTHC"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+              <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profilewallaper"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="66dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/catwithheart" />
+
+                        <TextView
+                            android:id="@+id/yourprogress"
+                            android:layout_width="131dp"
+                            android:layout_height="33dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="-10dp"
+                            android:fontFamily="monospace"
+                            android:includeFontPadding="false"
+                            android:text="Your Progress"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+              </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profilewallaper"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="97dp"
+                            android:layout_height="64dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/catwithmushroonhat" />
+
+                        <TextView
+                            android:id="@+id/fullname2"
+                            android:layout_width="131dp"
+                            android:layout_height="33dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="-10dp"
+                            android:fontFamily="monospace"
+                            android:includeFontPadding="false"
+                            android:text="Full Name"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
